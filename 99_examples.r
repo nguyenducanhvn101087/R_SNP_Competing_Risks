@@ -226,8 +226,6 @@ iwd.out
 #################### Fitting data with interval censoring #########################
 
 dat <- read.csv('cleardeath.csv', header = T)
-
-dat <- subset(dat, subset = r.arm.long != 'Ampho plus fluconazole') # not use this arm
 dim(dat) # 175
 
 # Pure CIF estimation for each treatment arm
@@ -235,6 +233,9 @@ dat.mono <- subset(dat, subset = r.arm.long == 'Ampho mono') # mono  therapy
 dat.comb <- subset(dat, subset = r.arm.long != 'Ampho mono') # combo therapy
 
 formula.app <- Hist(list(tt.clearDeath.lower, tt.clearDeath.upper), ev.clearDeath, cens.code=0) ~ 1
+
+anal.grad <- snpcr.grad.loglik # function implementing the analytical gradient for the loglikelihood,. 
+# This has already been implemented in snpcr.grad.loglik, hence should always be used!
 
 # SNP-based estimation
 snp.mod.mono <- snp.crreg(formula   = formula.app, data = dat.mono, 

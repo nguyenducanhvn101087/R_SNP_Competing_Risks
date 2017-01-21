@@ -1,264 +1,176 @@
-"study.no","r.arm.long","gender","age","ivdu","gcs","cd4","fungal.count.enrol.m2p1days","tt.clearDeath.lower","tt.clearDeath.upper","ev.clearDeath","evtype.clearDeath"
-1,"Ampho mono",1,19,1,15,43,NA,14.001,21,1,"Fungal clearance"
-2,"Ampho plus flucytosine",2,62,2,15,4,4350000,6.001,14,1,"Fungal clearance"
-3,"Ampho plus fluconazole",1,21,1,15,12,NA,20.001,27,1,"Fungal clearance"
-4,"Ampho plus flucytosine",1,20,2,15,7,150,0.001,6,1,"Fungal clearance"
-6,"Ampho plus fluconazole",2,NA,2,15,5,NA,1.001,2,2,"Prior death"
-7,"Ampho mono",1,28,1,15,8,710000,18.001,19,2,"Prior death"
-8,"Ampho plus fluconazole",1,26,1,15,9,555000,15.001,28,1,"Fungal clearance"
-9,"Ampho plus flucytosine",1,32,1,15,20,NA,7.001,13,1,"Fungal clearance"
-10,"Ampho mono",2,28,2,15,NA,180,1.001,2,2,"Prior death"
-11,"Ampho plus fluconazole",1,41,1,15,12,965000,18.001,19,2,"Prior death"
-12,"Ampho plus flucytosine",1,32,1,14,1,88500,28,1000,0,"Censored"
-13,"Ampho mono",1,21,1,NA,8,290000,14.001,21,1,"Fungal clearance"
-14,"Ampho plus fluconazole",1,28,1,15,5,1710000,21.001,27,1,"Fungal clearance"
-15,"Ampho mono",1,16,1,15,30,3250000,22.001,29,1,"Fungal clearance"
-16,"Ampho plus flucytosine",2,20,NA,13,NA,975000,6.001,13,1,"Fungal clearance"
-17,"Ampho plus fluconazole",1,24,1,15,10,1295000,7.001,14,1,"Fungal clearance"
-18,"Ampho plus flucytosine",1,28,1,14,16,13000,6.001,13,1,"Fungal clearance"
-19,"Ampho plus fluconazole",1,32,1,15,31,1035,6.001,13,1,"Fungal clearance"
-21,"Ampho plus fluconazole",1,18,1,15,24,NA,23.001,27,1,"Fungal clearance"
-23,"Ampho plus fluconazole",1,16,1,15,87,355,0.001,6,1,"Fungal clearance"
-24,"Ampho mono",1,29,2,10,25,NA,5.001,12,1,"Fungal clearance"
-25,"Ampho mono",1,22,1,15,NA,108000,1.001,2,2,"Prior death"
-26,"Ampho plus flucytosine",1,26,1,13,33,600000,13.001,20,1,"Fungal clearance"
-27,"Ampho mono",1,29,2,13,22,580000,30,1000,0,"Censored"
-28,"Ampho plus flucytosine",1,23,2,13,100,11200000,1.001,2,2,"Prior death"
-29,"Ampho plus fluconazole",1,24,2,15,51,3600000,14.001,21,1,"Fungal clearance"
-30,"Ampho mono",1,25,2,15,23,NA,23.001,24,2,"Prior death"
-32,"Ampho plus fluconazole",1,24,1,15,9,890000,21.001,28,1,"Fungal clearance"
-33,"Ampho plus fluconazole",1,30,1,15,44,132000,21.001,28,1,"Fungal clearance"
-34,"Ampho mono",1,22,1,15,22,20500,20.001,27,1,"Fungal clearance"
-35,"Ampho plus flucytosine",1,26,1,15,10,625000,14.001,20,1,"Fungal clearance"
-36,"Ampho mono",1,26,1,15,29,1070000,18.001,19,2,"Prior death"
-37,"Ampho plus fluconazole",1,28,1,15,98,NA,13.001,20,1,"Fungal clearance"
-38,"Ampho plus fluconazole",1,38,2,15,28,NA,16.001,17,2,"Prior death"
-39,"Ampho plus fluconazole",1,23,1,15,16,NA,20.001,27,1,"Fungal clearance"
-41,"Ampho plus flucytosine",1,22,1,15,8,42000,29,1000,0,"Censored"
-42,"Ampho mono",1,24,1,15,18,169000,7.001,14,1,"Fungal clearance"
-43,"Ampho plus flucytosine",1,23,1,15,33,715000,6.001,13,1,"Fungal clearance"
-45,"Ampho mono",1,20,2,9,37,1550000,27,1000,0,"Censored"
-46,"Ampho mono",1,28,2,15,35,1005000,26,1000,0,"Censored"
-48,"Ampho mono",1,26,1,6,6,510000,27,1000,0,"Censored"
-49,"Ampho plus fluconazole",1,26,1,15,108,370000,20.001,27,1,"Fungal clearance"
-50,"Ampho plus fluconazole",1,22,1,15,48,48000,13.001,20,1,"Fungal clearance"
-51,"Ampho plus fluconazole",1,33,2,15,116,NA,6.001,13,1,"Fungal clearance"
-52,"Ampho plus flucytosine",1,42,2,14,10,1255000,6.001,14,1,"Fungal clearance"
-53,"Ampho mono",1,25,1,15,21,67000,10.001,18,1,"Fungal clearance"
-54,"Ampho plus flucytosine",1,37,2,15,12,2850000,6.001,12,1,"Fungal clearance"
-55,"Ampho mono",1,23,1,13,10,NA,30,1000,0,"Censored"
-57,"Ampho mono",2,20,1,15,NA,10950000,2.001,3,2,"Prior death"
-58,"Ampho plus fluconazole",1,23,1,15,7,1275000,19.001,27,1,"Fungal clearance"
-59,"Ampho plus flucytosine",1,32,2,15,7,10100000,4.001,5,2,"Prior death"
-60,"Ampho plus flucytosine",1,32,2,14,12,NA,7.001,17,1,"Fungal clearance"
-62,"Ampho plus flucytosine",1,27,1,14,NA,385000,1.001,2,2,"Prior death"
-63,"Ampho plus fluconazole",1,31,2,15,30,NA,6,1000,0,"Censored"
-64,"Ampho plus flucytosine",1,25,1,15,16,135,0.001,6,1,"Fungal clearance"
-66,"Ampho mono",1,34,NA,NA,NA,895000,27,1000,0,"Censored"
-67,"Ampho plus fluconazole",1,23,1,15,26,88500,0.001,7,1,"Fungal clearance"
-68,"Ampho mono",1,29,1,15,40,1175000,27,1000,0,"Censored"
-69,"Ampho mono",1,31,1,15,10,570000,6.001,13,1,"Fungal clearance"
-70,"Ampho plus flucytosine",1,33,2,13,NA,37000,3.001,4,2,"Prior death"
-71,"Ampho plus fluconazole",1,33,1,15,11,32500,14.001,22,1,"Fungal clearance"
-72,"Ampho plus flucytosine",1,26,1,14,5,4200000,16.001,21,1,"Fungal clearance"
-74,"Ampho plus flucytosine",1,23,1,15,14,2400000,6.001,13,1,"Fungal clearance"
-76,"Ampho plus fluconazole",1,27,1,15,62,NA,20.001,26,1,"Fungal clearance"
-77,"Ampho mono",1,23,1,15,NA,1260000,5.001,6,2,"Prior death"
-78,"Ampho plus flucytosine",2,22,1,15,115,2600,0.001,2,1,"Fungal clearance"
-80,"Ampho plus flucytosine",1,43,2,13,10,10250,6.001,13,1,"Fungal clearance"
-81,"Ampho plus fluconazole",1,37,1,13,NA,7300000,6,1000,0,"Censored"
-82,"Ampho mono",1,24,1,15,NA,2250000,5.001,6,2,"Prior death"
-83,"Ampho plus flucytosine",1,24,1,15,12,450000,0.001,6,1,"Fungal clearance"
-84,"Ampho plus fluconazole",1,26,1,14,5,5750000,0.001,1,2,"Prior death"
-85,"Ampho mono",1,19,2,15,7,18400000,14.001,15,2,"Prior death"
-86,"Ampho plus fluconazole",1,19,1,10,13,3850,0.001,7,1,"Fungal clearance"
-87,"Ampho plus flucytosine",1,25,1,15,30,175000,6.001,13,1,"Fungal clearance"
-88,"Ampho plus fluconazole",1,30,2,15,48,6000,6.001,13,1,"Fungal clearance"
-89,"Ampho mono",1,15,1,15,NA,1805000,27,1000,0,"Censored"
-90,"Ampho plus flucytosine",1,28,1,15,52,405,0.001,7,1,"Fungal clearance"
-91,"Ampho mono",1,21,1,15,18,173500,5.001,13,1,"Fungal clearance"
-92,"Ampho mono",1,46,2,15,14,2700000,16.001,17,2,"Prior death"
-93,"Ampho plus flucytosine",1,22,1,15,33,410000,6.001,13,1,"Fungal clearance"
-94,"Ampho plus fluconazole",1,25,1,15,49,4950000,22.001,23,2,"Prior death"
-95,"Ampho plus flucytosine",1,25,1,15,14,2600000,13,1000,0,"Censored"
-96,"Ampho mono",1,31,1,13,33,NA,12.001,20,1,"Fungal clearance"
-97,"Ampho plus fluconazole",1,27,1,14,NA,87000,5.001,6,2,"Prior death"
-98,"Ampho plus flucytosine",1,23,1,15,8,1015000,6.001,13,1,"Fungal clearance"
-99,"Ampho plus fluconazole",1,27,1,11,NA,13550000,0.001,1,2,"Prior death"
-100,"Ampho plus flucytosine",1,24,1,15,8,1270000,6.001,13,1,"Fungal clearance"
-101,"Ampho plus flucytosine",1,25,1,15,7,1120000,0.001,4,1,"Fungal clearance"
-104,"Ampho mono",1,27,1,15,NA,2800000,7.001,8,2,"Prior death"
-105,"Ampho mono",1,26,1,15,3,500000,12.001,19,1,"Fungal clearance"
-106,"Ampho plus flucytosine",2,15,2,15,20,305000,0.001,6,1,"Fungal clearance"
-107,"Ampho plus fluconazole",2,31,2,15,NA,585000,15,1000,0,"Censored"
-108,"Ampho plus fluconazole",1,28,2,15,13,14400,0.001,6,1,"Fungal clearance"
-109,"Ampho plus fluconazole",2,20,2,11,NA,1110000,0.001,1,2,"Prior death"
-110,"Ampho plus fluconazole",1,23,1,6,NA,8350000,0.001,1,2,"Prior death"
-111,"Ampho mono",1,28,1,15,92,135000,5.001,12,1,"Fungal clearance"
-112,"Ampho plus flucytosine",1,34,2,15,7,665000,7.001,14,1,"Fungal clearance"
-113,"Ampho mono",1,26,1,13,NA,1125000,30,1000,0,"Censored"
-114,"Ampho mono",1,29,1,15,23,790000,29.001,30,2,"Prior death"
-115,"Ampho plus flucytosine",2,35,2,15,3,31500,0.001,6,1,"Fungal clearance"
-116,"Ampho plus fluconazole",1,23,1,15,15,1255000,12.001,19,1,"Fungal clearance"
-117,"Ampho plus flucytosine",1,24,2,14,27,1580000,6.001,13,1,"Fungal clearance"
-118,"Ampho plus fluconazole",1,21,1,13,63,10400,6.001,13,1,"Fungal clearance"
-119,"Ampho plus flucytosine",1,27,2,15,6,1190000,6.001,13,1,"Fungal clearance"
-120,"Ampho mono",2,24,1,14,NA,5000000,10.001,11,2,"Prior death"
-122,"Ampho mono",1,31,1,6,NA,NA,0.001,1,2,"Prior death"
-123,"Ampho plus flucytosine",1,35,1,15,15,1210000,6.001,13,1,"Fungal clearance"
-124,"Ampho plus fluconazole",1,20,1,15,52,1675000,21.001,27,1,"Fungal clearance"
-125,"Ampho mono",1,25,1,15,11,435000,27,1000,0,"Censored"
-126,"Ampho plus flucytosine",1,21,1,15,22,101500,6.001,12,1,"Fungal clearance"
-128,"Ampho plus flucytosine",1,28,1,15,36,31500,9.001,10,2,"Prior death"
-129,"Ampho plus flucytosine",1,30,1,15,NA,435000,15.001,21,1,"Fungal clearance"
-130,"Ampho mono",2,28,NA,15,NA,NA,0.001,4,1,"Fungal clearance"
-132,"Ampho mono",1,30,1,11,NA,NA,1.001,2,2,"Prior death"
-133,"Ampho plus fluconazole",1,25,1,15,3,NA,14.001,21,1,"Fungal clearance"
-134,"Ampho plus flucytosine",1,28,1,10,38,885000,14.001,20,1,"Fungal clearance"
-135,"Ampho plus fluconazole",1,34,1,15,NA,NA,2.001,3,2,"Prior death"
-136,"Ampho plus fluconazole",1,35,1,15,NA,NA,28,1000,0,"Censored"
-137,"Ampho mono",1,25,NA,14,12,6450000,21.001,28,1,"Fungal clearance"
-138,"Ampho plus fluconazole",1,29,1,13,NA,205000,7.001,8,2,"Prior death"
-139,"Ampho mono",2,30,2,15,11,20050000,4.001,5,2,"Prior death"
-140,"Ampho plus flucytosine",1,25,1,14,3,62500,15.001,16,2,"Prior death"
-142,"Ampho plus flucytosine",1,31,2,15,18,1090,0.001,7,1,"Fungal clearance"
-143,"Ampho mono",2,31,2,15,9,30000000,4.001,5,2,"Prior death"
-144,"Ampho plus flucytosine",1,33,1,15,16,11550,11,1000,0,"Censored"
-145,"Ampho mono",1,25,2,15,NA,1120000,7,1000,0,"Censored"
-146,"Ampho plus fluconazole",1,36,2,15,118,100,0.001,7,1,"Fungal clearance"
-147,"Ampho plus flucytosine",1,21,1,15,NA,320000,7.001,15,1,"Fungal clearance"
-150,"Ampho plus flucytosine",1,37,1,15,27,50500,13.001,27,1,"Fungal clearance"
-151,"Ampho plus fluconazole",1,21,1,15,9,NA,20.001,27,1,"Fungal clearance"
-152,"Ampho mono",1,28,1,4,45,NA,1.001,2,2,"Prior death"
-153,"Ampho mono",1,27,2,13,17,4800000,27,1000,0,"Censored"
-154,"Ampho plus flucytosine",1,35,1,15,27,10450000,13.001,20,1,"Fungal clearance"
-155,"Ampho plus fluconazole",1,24,1,6,6,6300000,4.001,5,2,"Prior death"
-156,"Ampho mono",1,33,2,15,6,6600000,14.001,20,1,"Fungal clearance"
-157,"Ampho mono",1,31,1,15,3,NA,27,1000,0,"Censored"
-158,"Ampho plus fluconazole",1,18,1,15,8,NA,20,1000,0,"Censored"
-159,"Ampho plus flucytosine",2,28,2,8,NA,1405000,1.001,2,2,"Prior death"
-160,"Ampho plus flucytosine",1,26,NA,7,42,NA,6.001,15,1,"Fungal clearance"
-161,"Ampho mono",1,26,1,9,NA,19750000,1.001,2,2,"Prior death"
-162,"Ampho plus fluconazole",1,28,2,13,NA,3900000,1.001,2,2,"Prior death"
-163,"Ampho mono",1,50,2,14,26,NA,16.001,17,2,"Prior death"
-164,"Ampho plus fluconazole",1,24,1,15,11,4100000,13.001,21,1,"Fungal clearance"
-165,"Ampho plus flucytosine",2,21,2,15,23,120500,5.001,13,1,"Fungal clearance"
-166,"Ampho plus fluconazole",1,25,1,15,NA,140000,13.001,20,1,"Fungal clearance"
-169,"Ampho plus fluconazole",1,37,2,15,6,710000,20.001,27,1,"Fungal clearance"
-171,"Ampho plus flucytosine",1,29,2,15,4,785000,5.001,11,1,"Fungal clearance"
-172,"Ampho mono",2,21,2,15,NA,520000,0.001,1,2,"Prior death"
-173,"Ampho plus fluconazole",1,31,2,15,6,180000,13.001,20,1,"Fungal clearance"
-174,"Ampho plus flucytosine",1,22,1,15,9,400000,29,1000,0,"Censored"
-175,"Ampho plus fluconazole",2,23,2,15,9,104000,4.001,5,2,"Prior death"
-176,"Ampho plus flucytosine",2,34,NA,15,NA,NA,7.001,14,1,"Fungal clearance"
-177,"Ampho mono",1,23,NA,15,NA,21400000,0.001,1,2,"Prior death"
-179,"Ampho mono",1,35,2,15,NA,NA,27,1000,0,"Censored"
-180,"Ampho plus fluconazole",1,27,2,15,20,5700000,28,1000,0,"Censored"
-181,"Ampho plus flucytosine",1,30,1,15,9,1700,6.001,13,1,"Fungal clearance"
-182,"Ampho plus fluconazole",1,26,1,11,NA,14100000,1.001,2,2,"Prior death"
-183,"Ampho mono",1,53,2,15,48,400000,7.001,15,1,"Fungal clearance"
-184,"Ampho plus flucytosine",1,23,1,5,NA,4700000,0.001,1,2,"Prior death"
-185,"Ampho mono",1,26,1,15,86,5400000,7.001,12,1,"Fungal clearance"
-186,"Ampho plus flucytosine",1,22,2,15,NA,1990000,6.001,13,1,"Fungal clearance"
-187,"Ampho mono",2,24,NA,15,NA,15900000,1.001,2,2,"Prior death"
-188,"Ampho plus fluconazole",1,28,2,15,2,14100000,17,1000,0,"Censored"
-189,"Ampho plus fluconazole",1,46,2,15,NA,800000,4.001,5,2,"Prior death"
-190,"Ampho mono",1,24,1,13,33,NA,20,1000,0,"Censored"
-191,"Ampho plus fluconazole",1,25,2,15,NA,NA,5.001,6,2,"Prior death"
-192,"Ampho plus flucytosine",1,29,1,15,NA,4700000,7.001,13,1,"Fungal clearance"
-194,"Ampho plus flucytosine",1,27,2,15,NA,NA,14.001,21,1,"Fungal clearance"
-195,"Ampho mono",1,31,1,15,NA,6200000,27,1000,0,"Censored"
-197,"Ampho plus fluconazole",1,36,2,NA,NA,11850000,27,1000,0,"Censored"
-199,"Ampho mono",1,25,1,15,6,760000,10.001,11,2,"Prior death"
-200,"Ampho plus fluconazole",1,27,1,14,NA,NA,0.001,1,2,"Prior death"
-201,"Ampho mono",2,32,2,15,5,3100000,13.001,20,1,"Fungal clearance"
-202,"Ampho plus fluconazole",1,39,1,12,5,325000,13.001,20,1,"Fungal clearance"
-203,"Ampho plus flucytosine",2,26,2,13,7,2550000,10.001,11,2,"Prior death"
-204,"Ampho mono",1,44,1,15,NA,178000,8.001,14,1,"Fungal clearance"
-205,"Ampho plus flucytosine",1,24,1,15,20,NA,14.001,19,1,"Fungal clearance"
-206,"Ampho plus fluconazole",1,20,2,15,41,NA,7.001,14,1,"Fungal clearance"
-207,"Ampho plus flucytosine",2,31,2,12,NA,NA,6.001,18,1,"Fungal clearance"
-209,"Ampho plus fluconazole",1,24,1,15,6,790000,20.001,27,1,"Fungal clearance"
-210,"Ampho plus fluconazole",1,34,2,15,2,1270000,6.001,13,1,"Fungal clearance"
-211,"Ampho plus fluconazole",2,29,2,15,24,230000,11.001,18,1,"Fungal clearance"
-212,"Ampho plus flucytosine",1,25,1,14,NA,980000,6.001,13,1,"Fungal clearance"
-216,"Ampho mono",2,27,2,15,8,1065000,9.001,10,2,"Prior death"
-217,"Ampho plus flucytosine",2,30,2,5,NA,5500000,1.001,2,2,"Prior death"
-218,"Ampho mono",1,25,2,15,85,44000,6.001,14,1,"Fungal clearance"
-219,"Ampho mono",1,25,1,15,150,58000,13.001,19,1,"Fungal clearance"
-220,"Ampho plus flucytosine",2,31,2,15,19,1025000,13.001,20,1,"Fungal clearance"
-221,"Ampho plus flucytosine",2,27,2,15,36,180,1.001,7,1,"Fungal clearance"
-222,"Ampho plus fluconazole",1,25,1,15,10,238000,5.001,12,1,"Fungal clearance"
-223,"Ampho plus fluconazole",1,33,1,15,16,64000,6.001,13,1,"Fungal clearance"
-224,"Ampho mono",1,28,2,11,39,425000,27,1000,0,"Censored"
-225,"Ampho plus fluconazole",1,29,1,15,7,5,1.001,7,1,"Fungal clearance"
-226,"Ampho plus fluconazole",1,26,2,15,NA,2800000,28,1000,0,"Censored"
-227,"Ampho plus fluconazole",1,31,2,15,22,193500,21,1000,0,"Censored"
-228,"Ampho plus fluconazole",1,24,2,15,NA,53500,20.001,28,1,"Fungal clearance"
-229,"Ampho mono",2,28,2,15,25,765000,10.001,16,1,"Fungal clearance"
-230,"Ampho plus flucytosine",2,35,2,15,18,167500,0.001,9,1,"Fungal clearance"
-231,"Ampho mono",1,27,2,15,3,695000,22.001,29,1,"Fungal clearance"
-232,"Ampho plus flucytosine",1,63,2,12,56,1895000,13.001,20,1,"Fungal clearance"
-233,"Ampho plus flucytosine",1,18,2,14,16,1075000,7.001,14,1,"Fungal clearance"
-234,"Ampho mono",2,33,2,13,36,310000,13.001,20,1,"Fungal clearance"
-235,"Ampho mono",1,59,NA,5,53,2400000,6,1000,0,"Censored"
-236,"Ampho plus flucytosine",1,28,1,15,5,NA,6.001,13,1,"Fungal clearance"
-237,"Ampho plus fluconazole",2,41,2,13,6,6000000,12.001,13,2,"Prior death"
-238,"Ampho mono",1,41,NA,15,19,300000,12.001,19,1,"Fungal clearance"
-239,"Ampho plus flucytosine",2,32,2,15,15,NA,14.001,28,1,"Fungal clearance"
-240,"Ampho plus flucytosine",1,42,2,12,NA,NA,0.001,1,2,"Prior death"
-241,"Ampho plus fluconazole",2,22,2,15,32,3000,7.001,15,1,"Fungal clearance"
-242,"Ampho plus fluconazole",1,29,1,15,3,225000,13,1000,0,"Censored"
-243,"Ampho mono",1,24,2,15,15,163500,25,1000,0,"Censored"
-244,"Ampho plus flucytosine",1,34,2,15,21,320,0.001,7,1,"Fungal clearance"
-245,"Ampho mono",1,43,2,13,126,810000,1.001,2,2,"Prior death"
-246,"Ampho plus fluconazole",1,33,2,12,8,181500,15.001,29,1,"Fungal clearance"
-247,"Ampho mono",1,30,2,15,5,3000000,26,1000,0,"Censored"
-248,"Ampho plus fluconazole",2,24,2,15,7,915000,14.001,29,1,"Fungal clearance"
-249,"Ampho plus fluconazole",2,26,2,15,6,745000,14.001,22,1,"Fungal clearance"
-250,"Ampho plus flucytosine",1,44,2,15,14,4900000,8.001,9,2,"Prior death"
-251,"Ampho mono",1,30,1,15,8,NA,6.001,13,1,"Fungal clearance"
-252,"Ampho plus flucytosine",2,31,2,11,NA,675000,5.001,15,1,"Fungal clearance"
-253,"Ampho plus flucytosine",1,29,1,15,107,85,1.001,6,1,"Fungal clearance"
-254,"Ampho plus flucytosine",1,30,1,15,27,1220000,7.001,14,1,"Fungal clearance"
-255,"Ampho mono",2,43,2,12,NA,250000,10.001,11,2,"Prior death"
-256,"Ampho plus fluconazole",1,30,1,15,NA,17800,16.001,26,1,"Fungal clearance"
-257,"Ampho plus fluconazole",1,23,1,15,8,157000,13.001,22,1,"Fungal clearance"
-258,"Ampho mono",2,42,2,15,8,8950,2.001,9,1,"Fungal clearance"
-259,"Ampho mono",2,28,1,15,39,10150000,12.001,19,1,"Fungal clearance"
-260,"Ampho plus flucytosine",1,29,1,7,21,28000,0.001,5,1,"Fungal clearance"
-261,"Ampho plus fluconazole",1,25,2,15,14,114000,21,1000,0,"Censored"
-262,"Ampho plus flucytosine",1,31,1,12,42,NA,2.001,6,1,"Fungal clearance"
-263,"Ampho plus fluconazole",2,26,2,15,4,5050000,6.001,7,2,"Prior death"
-264,"Ampho mono",1,29,1,15,40,890000,7.001,12,1,"Fungal clearance"
-265,"Ampho plus flucytosine",1,21,2,15,52,395000,6.001,13,1,"Fungal clearance"
-266,"Ampho plus fluconazole",1,38,2,15,15,5550,0.001,6,1,"Fungal clearance"
-267,"Ampho plus flucytosine",1,37,2,15,22,NA,9.001,16,1,"Fungal clearance"
-268,"Ampho plus fluconazole",2,29,2,15,59,505,1.001,7,1,"Fungal clearance"
-269,"Ampho mono",2,36,2,15,15,2900000,14.001,19,1,"Fungal clearance"
-270,"Ampho mono",2,28,2,15,5,500000,12.001,13,2,"Prior death"
-271,"Ampho plus fluconazole",1,43,2,15,NA,11800000,13.001,20,1,"Fungal clearance"
-272,"Ampho plus flucytosine",1,33,2,13,22,1350000,13.001,16,1,"Fungal clearance"
-273,"Ampho plus flucytosine",1,26,1,15,24,315000,13.001,20,1,"Fungal clearance"
-275,"Ampho mono",1,51,2,15,13,107000,30,1000,0,"Censored"
-277,"Ampho plus fluconazole",1,28,2,15,22,665000,14,1000,0,"Censored"
-278,"Ampho plus flucytosine",1,27,2,15,5,1530000,12.001,20,1,"Fungal clearance"
-279,"Ampho mono",2,32,2,9,7,NA,19,1000,0,"Censored"
-280,"Ampho plus fluconazole",2,28,2,15,8,785000,13.001,20,1,"Fungal clearance"
-282,"Ampho plus flucytosine",2,29,2,15,NA,NA,6.001,17,1,"Fungal clearance"
-284,"Ampho mono",1,30,1,15,78,1550000,26,1000,0,"Censored"
-285,"Ampho plus flucytosine",2,28,NA,11,115,15900000,3.001,4,2,"Prior death"
-286,"Ampho plus flucytosine",1,38,1,15,14,695000,20.001,29,1,"Fungal clearance"
-287,"Ampho mono",1,26,2,15,49,710000,7.001,13,1,"Fungal clearance"
-288,"Ampho plus fluconazole",1,21,NA,15,73,74500,26,1000,0,"Censored"
-289,"Ampho mono",1,28,1,15,83,244000,25,1000,0,"Censored"
-290,"Ampho plus fluconazole",1,36,2,15,43,1490,7.001,16,1,"Fungal clearance"
-291,"Ampho plus fluconazole",1,31,1,15,27,1995000,8,1000,0,"Censored"
-292,"Ampho plus flucytosine",1,31,NA,15,1,2450,0.001,7,1,"Fungal clearance"
-293,"Ampho mono",1,43,2,15,21,NA,2.001,7,1,"Fungal clearance"
-294,"Ampho plus fluconazole",1,45,2,13,20,63500,16.001,17,2,"Prior death"
-295,"Ampho plus flucytosine",1,38,2,15,24,NA,14.001,15,2,"Prior death"
-296,"Ampho plus flucytosine",1,35,2,15,28,210000,6.001,13,1,"Fungal clearance"
-297,"Ampho mono",1,22,2,15,39,33000,22.001,29,1,"Fungal clearance"
-298,"Ampho plus flucytosine",1,61,2,15,NA,NA,6.001,13,1,"Fungal clearance"
-299,"Ampho mono",1,30,1,8,4,655000,2.001,3,2,"Prior death"
+study.no,r.arm.long,tt.clearDeath.lower,tt.clearDeath.upper,ev.clearDeath,evtype.clearDeath
+1,Ampho mono,14.001,21,1,Fungal clearance
+2,Ampho plus flucytosine,6.001,14,1,Fungal clearance
+4,Ampho plus flucytosine,0.001,6,1,Fungal clearance
+7,Ampho mono,18.001,19,2,Prior death
+9,Ampho plus flucytosine,7.001,13,1,Fungal clearance
+10,Ampho mono,1.001,2,2,Prior death
+12,Ampho plus flucytosine,28,1000,0,Censored
+13,Ampho mono,14.001,21,1,Fungal clearance
+15,Ampho mono,22.001,29,1,Fungal clearance
+16,Ampho plus flucytosine,6.001,13,1,Fungal clearance
+18,Ampho plus flucytosine,6.001,13,1,Fungal clearance
+24,Ampho mono,5.001,12,1,Fungal clearance
+25,Ampho mono,1.001,2,2,Prior death
+26,Ampho plus flucytosine,13.001,20,1,Fungal clearance
+27,Ampho mono,30,1000,0,Censored
+28,Ampho plus flucytosine,1.001,2,2,Prior death
+30,Ampho mono,23.001,24,2,Prior death
+34,Ampho mono,20.001,27,1,Fungal clearance
+35,Ampho plus flucytosine,14.001,20,1,Fungal clearance
+36,Ampho mono,18.001,19,2,Prior death
+41,Ampho plus flucytosine,29,1000,0,Censored
+42,Ampho mono,7.001,14,1,Fungal clearance
+43,Ampho plus flucytosine,6.001,13,1,Fungal clearance
+45,Ampho mono,27,1000,0,Censored
+46,Ampho mono,26,1000,0,Censored
+48,Ampho mono,27,1000,0,Censored
+52,Ampho plus flucytosine,6.001,14,1,Fungal clearance
+53,Ampho mono,10.001,18,1,Fungal clearance
+54,Ampho plus flucytosine,6.001,12,1,Fungal clearance
+55,Ampho mono,30,1000,0,Censored
+57,Ampho mono,2.001,3,2,Prior death
+59,Ampho plus flucytosine,4.001,5,2,Prior death
+60,Ampho plus flucytosine,7.001,17,1,Fungal clearance
+62,Ampho plus flucytosine,1.001,2,2,Prior death
+64,Ampho plus flucytosine,0.001,6,1,Fungal clearance
+66,Ampho mono,27,1000,0,Censored
+68,Ampho mono,27,1000,0,Censored
+69,Ampho mono,6.001,13,1,Fungal clearance
+70,Ampho plus flucytosine,3.001,4,2,Prior death
+72,Ampho plus flucytosine,16.001,21,1,Fungal clearance
+74,Ampho plus flucytosine,6.001,13,1,Fungal clearance
+77,Ampho mono,5.001,6,2,Prior death
+78,Ampho plus flucytosine,0.001,2,1,Fungal clearance
+80,Ampho plus flucytosine,6.001,13,1,Fungal clearance
+82,Ampho mono,5.001,6,2,Prior death
+83,Ampho plus flucytosine,0.001,6,1,Fungal clearance
+85,Ampho mono,14.001,15,2,Prior death
+87,Ampho plus flucytosine,6.001,13,1,Fungal clearance
+89,Ampho mono,27,1000,0,Censored
+90,Ampho plus flucytosine,0.001,7,1,Fungal clearance
+91,Ampho mono,5.001,13,1,Fungal clearance
+92,Ampho mono,16.001,17,2,Prior death
+93,Ampho plus flucytosine,6.001,13,1,Fungal clearance
+95,Ampho plus flucytosine,13,1000,0,Censored
+96,Ampho mono,12.001,20,1,Fungal clearance
+98,Ampho plus flucytosine,6.001,13,1,Fungal clearance
+100,Ampho plus flucytosine,6.001,13,1,Fungal clearance
+101,Ampho plus flucytosine,0.001,4,1,Fungal clearance
+104,Ampho mono,7.001,8,2,Prior death
+105,Ampho mono,12.001,19,1,Fungal clearance
+106,Ampho plus flucytosine,0.001,6,1,Fungal clearance
+111,Ampho mono,5.001,12,1,Fungal clearance
+112,Ampho plus flucytosine,7.001,14,1,Fungal clearance
+113,Ampho mono,30,1000,0,Censored
+114,Ampho mono,29.001,30,2,Prior death
+115,Ampho plus flucytosine,0.001,6,1,Fungal clearance
+117,Ampho plus flucytosine,6.001,13,1,Fungal clearance
+119,Ampho plus flucytosine,6.001,13,1,Fungal clearance
+120,Ampho mono,10.001,11,2,Prior death
+122,Ampho mono,0.001,1,2,Prior death
+123,Ampho plus flucytosine,6.001,13,1,Fungal clearance
+125,Ampho mono,27,1000,0,Censored
+126,Ampho plus flucytosine,6.001,12,1,Fungal clearance
+128,Ampho plus flucytosine,9.001,10,2,Prior death
+129,Ampho plus flucytosine,15.001,21,1,Fungal clearance
+130,Ampho mono,0.001,4,1,Fungal clearance
+132,Ampho mono,1.001,2,2,Prior death
+134,Ampho plus flucytosine,14.001,20,1,Fungal clearance
+137,Ampho mono,21.001,28,1,Fungal clearance
+139,Ampho mono,4.001,5,2,Prior death
+140,Ampho plus flucytosine,15.001,16,2,Prior death
+142,Ampho plus flucytosine,0.001,7,1,Fungal clearance
+143,Ampho mono,4.001,5,2,Prior death
+144,Ampho plus flucytosine,11,1000,0,Censored
+145,Ampho mono,7,1000,0,Censored
+147,Ampho plus flucytosine,7.001,15,1,Fungal clearance
+150,Ampho plus flucytosine,13.001,27,1,Fungal clearance
+152,Ampho mono,1.001,2,2,Prior death
+153,Ampho mono,27,1000,0,Censored
+154,Ampho plus flucytosine,13.001,20,1,Fungal clearance
+156,Ampho mono,14.001,20,1,Fungal clearance
+157,Ampho mono,27,1000,0,Censored
+159,Ampho plus flucytosine,1.001,2,2,Prior death
+160,Ampho plus flucytosine,6.001,15,1,Fungal clearance
+161,Ampho mono,1.001,2,2,Prior death
+163,Ampho mono,16.001,17,2,Prior death
+165,Ampho plus flucytosine,5.001,13,1,Fungal clearance
+171,Ampho plus flucytosine,5.001,11,1,Fungal clearance
+172,Ampho mono,0.001,1,2,Prior death
+174,Ampho plus flucytosine,29,1000,0,Censored
+176,Ampho plus flucytosine,7.001,14,1,Fungal clearance
+177,Ampho mono,0.001,1,2,Prior death
+179,Ampho mono,27,1000,0,Censored
+181,Ampho plus flucytosine,6.001,13,1,Fungal clearance
+183,Ampho mono,7.001,15,1,Fungal clearance
+184,Ampho plus flucytosine,0.001,1,2,Prior death
+185,Ampho mono,7.001,12,1,Fungal clearance
+186,Ampho plus flucytosine,6.001,13,1,Fungal clearance
+187,Ampho mono,1.001,2,2,Prior death
+190,Ampho mono,20,1000,0,Censored
+192,Ampho plus flucytosine,7.001,13,1,Fungal clearance
+194,Ampho plus flucytosine,14.001,21,1,Fungal clearance
+195,Ampho mono,27,1000,0,Censored
+199,Ampho mono,10.001,11,2,Prior death
+201,Ampho mono,13.001,20,1,Fungal clearance
+203,Ampho plus flucytosine,10.001,11,2,Prior death
+204,Ampho mono,8.001,14,1,Fungal clearance
+205,Ampho plus flucytosine,14.001,19,1,Fungal clearance
+207,Ampho plus flucytosine,6.001,18,1,Fungal clearance
+212,Ampho plus flucytosine,6.001,13,1,Fungal clearance
+216,Ampho mono,9.001,10,2,Prior death
+217,Ampho plus flucytosine,1.001,2,2,Prior death
+218,Ampho mono,6.001,14,1,Fungal clearance
+219,Ampho mono,13.001,19,1,Fungal clearance
+220,Ampho plus flucytosine,13.001,20,1,Fungal clearance
+221,Ampho plus flucytosine,1.001,7,1,Fungal clearance
+224,Ampho mono,27,1000,0,Censored
+229,Ampho mono,10.001,16,1,Fungal clearance
+230,Ampho plus flucytosine,0.001,9,1,Fungal clearance
+231,Ampho mono,22.001,29,1,Fungal clearance
+232,Ampho plus flucytosine,13.001,20,1,Fungal clearance
+233,Ampho plus flucytosine,7.001,14,1,Fungal clearance
+234,Ampho mono,13.001,20,1,Fungal clearance
+235,Ampho mono,6,1000,0,Censored
+236,Ampho plus flucytosine,6.001,13,1,Fungal clearance
+238,Ampho mono,12.001,19,1,Fungal clearance
+239,Ampho plus flucytosine,14.001,28,1,Fungal clearance
+240,Ampho plus flucytosine,0.001,1,2,Prior death
+243,Ampho mono,25,1000,0,Censored
+244,Ampho plus flucytosine,0.001,7,1,Fungal clearance
+245,Ampho mono,1.001,2,2,Prior death
+247,Ampho mono,26,1000,0,Censored
+250,Ampho plus flucytosine,8.001,9,2,Prior death
+251,Ampho mono,6.001,13,1,Fungal clearance
+252,Ampho plus flucytosine,5.001,15,1,Fungal clearance
+253,Ampho plus flucytosine,1.001,6,1,Fungal clearance
+254,Ampho plus flucytosine,7.001,14,1,Fungal clearance
+255,Ampho mono,10.001,11,2,Prior death
+258,Ampho mono,2.001,9,1,Fungal clearance
+259,Ampho mono,12.001,19,1,Fungal clearance
+260,Ampho plus flucytosine,0.001,5,1,Fungal clearance
+262,Ampho plus flucytosine,2.001,6,1,Fungal clearance
+264,Ampho mono,7.001,12,1,Fungal clearance
+265,Ampho plus flucytosine,6.001,13,1,Fungal clearance
+267,Ampho plus flucytosine,9.001,16,1,Fungal clearance
+269,Ampho mono,14.001,19,1,Fungal clearance
+270,Ampho mono,12.001,13,2,Prior death
+272,Ampho plus flucytosine,13.001,16,1,Fungal clearance
+273,Ampho plus flucytosine,13.001,20,1,Fungal clearance
+275,Ampho mono,30,1000,0,Censored
+278,Ampho plus flucytosine,12.001,20,1,Fungal clearance
+279,Ampho mono,19,1000,0,Censored
+282,Ampho plus flucytosine,6.001,17,1,Fungal clearance
+284,Ampho mono,26,1000,0,Censored
+285,Ampho plus flucytosine,3.001,4,2,Prior death
+286,Ampho plus flucytosine,20.001,29,1,Fungal clearance
+287,Ampho mono,7.001,13,1,Fungal clearance
+289,Ampho mono,25,1000,0,Censored
+292,Ampho plus flucytosine,0.001,7,1,Fungal clearance
+293,Ampho mono,2.001,7,1,Fungal clearance
+295,Ampho plus flucytosine,14.001,15,2,Prior death
+296,Ampho plus flucytosine,6.001,13,1,Fungal clearance
+297,Ampho mono,22.001,29,1,Fungal clearance
+298,Ampho plus flucytosine,6.001,13,1,Fungal clearance
+299,Ampho mono,2.001,3,2,Prior death
