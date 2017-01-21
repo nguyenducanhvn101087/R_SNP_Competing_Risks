@@ -14,6 +14,7 @@
 # - demo of func. iwd.snp.onecif
 
 # CLEAR DEATH EXAMPLE
+# - demo of func. snp.cif
 
 #================================================================================
 rm(list = ls())
