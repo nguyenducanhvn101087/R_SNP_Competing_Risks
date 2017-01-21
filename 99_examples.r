@@ -2,6 +2,20 @@
 # Modified: 21 Jan 2017
 # Anh Nguyen Duc - OUCRU
 #================================================================================
+
+# Contents:
+# Simulating Competing Risks Data from Underlying SNP-based Model
+# - demo of func. simttesnp
+
+# Estimating Competing Risks Data Using SNP-based Model
+# - demo of func. snp.crreg
+
+# CIF Comparision using SNP-based IWD
+# - demo of func. iwd.snp.onecif
+
+# CLEAR DEATH EXAMPLE
+
+#================================================================================
 rm(list = ls())
 source("1_snpcr.r")
 # library("timereg")
@@ -10,18 +24,6 @@ source("1_snpcr.r")
 
 graphics.off()
 #================================================================================
-
-############################## CLEAR DEATH EXAMPLE ##############################
-dat <- read.csv('cleardeath.csv', )
-
-
-
-
-
-
-
-
-
 
 
 
@@ -125,6 +127,7 @@ for(r in 1:nrow(ind.ints)) {
 dat.ic <- data.frame(L = L, R = R, evstat = dat.evstat, LT=rep(0, n.dat), 
                      x1= rnorm(length(dat.tte)), 
                      x2= rexp(length(dat.tte)))   
+dat.ic$L[dat.ic$L==0] <- dat.ic$L[dat.ic$L==0] + .001 # otherwise optimization crashes!
 
 
 ############### Estimating Competing Risks Data Using SNP-based Model ###############
@@ -184,6 +187,7 @@ snpn.mod <- snp.crreg(formula = formula, data = dat.rc,
 # snpn.mod
 
 # fit snp model with mixed base densities matching the true one plus having x1 and x2 -----------
+
 snpm.mod <- snp.crreg(formula = update(formula, ~ . + x1 + x2), data = dat.rc, 
                       base.dens = c("stdnorm", "exp", 'stdnorm'), kms = kms, 
                       criterion = criterion, anal.grad = anal.grad, check.hess = check.hess,
@@ -193,12 +197,14 @@ snpm.mod <- snp.crreg(formula = update(formula, ~ . + x1 + x2), data = dat.rc,
 
 # for interval censored data --------------------------------------------------------
 # fit snp model with mixed base densities matching the true one plus having x1 and x2
-snpm.mod.ic <- snp.crreg(formula = update(formula, ~ . + x1 + x2), data = dat.ic, 
+formula.ic <- Hist(list(L,R), evstat, cens.code=0) ~ 1
+snpm.mod.ic <- snp.crreg(formula = update(formula.ic, ~ . + x1 + x2), data = dat.ic, 
                          base.dens = c("stdnorm", "exp", 'stdnorm'), kms = kms, 
                          criterion = criterion, anal.grad = anal.grad, check.hess = check.hess,
                          parallelism=parallelism, ncores=ncores, 
                          control=list(maxiter=100))
 # snpm.mod.ic
+
 
 #################### CIF Comparision using SNP-based IWD ############################
 ############### The Important Function is << iwd.snp.onecif >> ######################
@@ -213,3 +219,77 @@ parlist2$base.dens <- 'stdnorm'
 iwd.out <- iwd.snp.onecif(parlist1 = parlist1, parlist2 = parlist2, 
                           j = 2, wfun = function(x) 1, wfix = 1, lower= 0, upper=t_m)
 iwd.out
+
+
+############################## CLEAR DEATH EXAMPLE ################################
+#################### Fitting data with interval censoring #########################
+
+dat <- read.csv('cleardeath.csv', header = T)
+
+dat <- subset(dat, subset = r.arm.long != 'Ampho plus fluconazole') # not use this arm
+dim(dat) # 175
+
+# Pure CIF estimation for each treatment arm
+dat.mono <- subset(dat, subset = r.arm.long == 'Ampho mono') # mono  therapy
+dat.comb <- subset(dat, subset = r.arm.long != 'Ampho mono') # combo therapy
+
+formula.app <- Hist(list(tt.clearDeath.lower, tt.clearDeath.upper), ev.clearDeath, cens.code=0) ~ 1
+
+# SNP-based estimation
+snp.mod.mono <- snp.crreg(formula   = formula.app, data = dat.mono, 
+                          base.dens = c("exp", "exp"), kms = c(3, 3), 
+                          criterion = 'HQCn', anal.grad = anal.grad, check.hess = F,
+                          parallelism=T, ncores=4, 
+                          control=list(maxiter=100))
+
+snp.mod.comb <- snp.crreg(formula   = formula.app, data = dat.comb, 
+                          base.dens = c("stdnorm", "stdnorm"), kms = c(3, 3), 
+                          criterion = 'HQCn', anal.grad = anal.grad, check.hess = F,
+                          parallelism=T, ncores=4, 
+                          control=list(maxiter=100))
+
+## Un-comment below to try diff. base densities and compare HQCn
+# snp.mod.mono2 <- snp.crreg(formula   = formula.app, data = dat.mono, 
+#                           base.dens = c("stdnorm", "stdnorm"), kms = c(3, 3), 
+#                           criterion = 'HQCn', anal.grad = anal.grad, check.hess = F,
+#                           parallelism=T, ncores=4, 
+#                           control=list(maxiter=100))
+# 
+# snp.mod.comb2 <- snp.crreg(formula   = formula.app, data = dat.comb, 
+#                           base.dens = c("exp", "exp"), kms = c(3, 3), 
+#                           criterion = 'HQCn', anal.grad = anal.grad, check.hess = F,
+#                           parallelism=T, ncores=4, 
+#                           control=list(maxiter=100))
+
+
+# Plot results - Demo of funciton snp.cif --------------------------------------------------
+times <- seq(0, 28, length.out = 100)
+
+# get best result from each model 
+best.snp.mono <- tail(snp.mod.mono$final.outs, 1)[[1]]
+best.snp.comb <- tail(snp.mod.comb$final.outs, 1)[[1]]
+
+# event type 1 is fungal clearance
+cif.mono.clear <- snp.cif(tt = times, theta = c(best.snp.mono$phis[[1]], best.snp.mono$mu.sigs[1,]), 
+                          base.dens = snp.mod.mono$base.dens[1], bet = NULL, y = NULL, P = best.snp.mono$P[1,1])
+
+cif.comb.clear <- snp.cif(tt = times, theta = c(best.snp.comb$phis[[1]], best.snp.comb$mu.sigs[1,]), 
+                          base.dens = snp.mod.comb$base.dens[1], bet = NULL, y = NULL, P = best.snp.comb$P[1,1])
+
+# event type 2 is prior death
+cif.mono.death <- snp.cif(tt = times, theta = c(best.snp.mono$phis[[2]], best.snp.mono$mu.sigs[2,]), 
+                          base.dens = snp.mod.mono$base.dens[2], bet = NULL, y = NULL, P = best.snp.mono$P[1,2])
+
+cif.comb.death <- snp.cif(tt = times, theta = c(best.snp.comb$phis[[2]], best.snp.comb$mu.sigs[2,]), 
+                          base.dens = snp.mod.comb$base.dens[2], bet = NULL, y = NULL, P = best.snp.comb$P[1,2])
+
+x11()
+plot(times, cif.mono.clear, type='l', bty= 'n', xlab='Days since randomization', ylab = 'Probability', 
+     xlim=c(0,28), ylim=c(0,1), lwd=2, main='CIF of Fungale  Clearance and 1 - CIF of Prior Death')
+lines(times, cif.comb.clear, col=gray(.8), lwd=2)
+
+lines(times, 1-cif.mono.death, lwd=2)
+lines(times, 1-cif.comb.death, col=gray(.8), lwd=2)
+text(x=20, y=0.2, labels = 'Fungal Clearance', cex = 2)
+text(x=20, y=0.9, labels = 'Prior Death', cex = 2)
+legend(x = 0, y=.7, lwd=2, col = c('black', gray(0.8)), legend = c('Ampho mono', 'Ampho + flucytosine'), bty = 'n')

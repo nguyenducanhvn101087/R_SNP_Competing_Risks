@@ -3,4 +3,6 @@
 
 2) Before using any function, source("1_snpcr.r").
    Install the missing R packages per warning messages for the 1st run.
+
+
    
