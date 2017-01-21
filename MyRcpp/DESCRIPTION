@@ -1,0 +1,15 @@
+Package: MyRcpp
+Type: Package
+Title: What the package does (short line)
+Version: 1.0
+Date: 2015-06-03
+Author: Your Name
+Maintainer: Your Name <your@email.com>
+Description: More about what it does (maybe more than one line)
+License: GPL (>= 2)
+Imports: Rcpp (>= 0.11.6), RcppEigen (>= 0.3.2.4.0)
+LinkingTo: Rcpp, RcppEigen
+NeedsCompilation: yes
+Packaged: 2015-06-03 10:00:33 UTC; anhnd
+Built: R 3.3.1; i386-w64-mingw32; 2016-10-04 15:40:19 UTC; windows
+Archs: i386, x64

@@ -1,5 +1,5 @@
 # Created:  30 Dec 2016
-# Modified: 30 Dec 2016
+# Modified: 21 Jan 2017
 # Anh Nguyen Duc - OUCRU
 #================================================================================
 rm(list = ls())
@@ -10,6 +10,20 @@ source("1_snpcr.r")
 
 graphics.off()
 #================================================================================
+
+############################## CLEAR DEATH EXAMPLE ##############################
+dat <- read.csv('cleardeath.csv', )
+
+
+
+
+
+
+
+
+
+
+
 
 ############### Simulating Competing Risks Data from Underlying SNP-based Model ###############
 ######################### The Important Function is << simttesnp >> ###########################
