@@ -222,13 +222,14 @@ iwd.out <- iwd.snp.onecif(parlist1 = parlist1, parlist2 = parlist2,
 iwd.out
 
 
+
 ############################## CLEAR DEATH EXAMPLE ################################
 #################### Fitting data with interval censoring #########################
 
 dat <- read.csv('cleardeath.csv', header = T)
 dim(dat) # 175
 
-# Pure CIF estimation for each treatment arm
+# ************************* Pure CIF estimation for each treatment arm ********************************
 dat.mono <- subset(dat, subset = r.arm.long == 'Ampho mono') # mono  therapy
 dat.comb <- subset(dat, subset = r.arm.long != 'Ampho mono') # combo therapy
 
@@ -264,7 +265,8 @@ snp.mod.comb <- snp.crreg(formula   = formula.app, data = dat.comb,
 #                           control=list(maxiter=100))
 
 
-# Plot results - Demo of funciton snp.cif --------------------------------------------------
+
+# *************************** Plot results - Demo of funciton snp.cif ****************************************
 times <- seq(0, 28, length.out = 100)
 
 # get best result from each model 
@@ -295,3 +297,22 @@ lines(times, 1-cif.comb.death, col=gray(.8), lwd=2)
 text(x=20, y=0.2, labels = 'Fungal Clearance', cex = 2)
 text(x=20, y=0.9, labels = 'Prior Death', cex = 2)
 legend(x = 0, y=.7, lwd=2, col = c('black', gray(0.8)), legend = c('Ampho mono', 'Ampho + flucytosine'), bty = 'n')
+
+
+
+# ********************************** Compare cifs using IWD ********************************************
+best.snp.mono$base.dens <- snp.mod.mono$base.dens
+best.snp.comb$base.dens <- snp.mod.comb$base.dens
+
+
+iwd.out.clear <- iwd.snp.onecif(parlist1 = best.snp.mono, parlist2 = best.snp.comb, 
+                                j = 1, wfun = function(x) 1, wfix = 1, lower= 0, upper=28)
+iwd.out.clear
+
+
+iwd.out.death <- iwd.snp.onecif(parlist1 = best.snp.mono, parlist2 = best.snp.comb, 
+                                j = 2, wfun = function(x) 1, wfix = 1, lower= 0, upper=28)
+iwd.out.death
+
+
+
